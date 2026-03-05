@@ -64,18 +64,47 @@
         <section id="schedule" class="panel" aria-label="Schedule section">
             <div class="panel-inner">
                 <h2>Schedule</h2>
-                <p>Weekly schedule or calendar details can be placed here.</p>
+                <div class="schedule-legend">
+                    <span class="legend-item legend--class">University Classes</span>
+                    <span class="legend-item legend--work">Amazon Internship</span>
+                    <span class="legend-item legend--personal">Personal / Hobbies</span>
+                </div>
+                <div class="schedule-wrapper">
+                    <!-- Table is built by schedule.js -->
+                    <div id="schedule-container"></div>
+                </div>
             </div>
         </section>
 
         <section id="resume" class="panel" aria-label="Resume section">
-            <div class="panel-inner">
-                <h2>Resume</h2>
-                <p>Links or summary of your resume/CV.</p>
+            <div class="panel-inner" id="resume-inner">
+                <h2>Resume / CV</h2>
+                <div class="resume-toolbar">
+                    <a class="qbtn" href="media/resume.pdf" download="Gustavo_Valenzuela_Resume.pdf">
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                    <a class="qbtn qbtn--outline" href="media/resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in new tab
+                    </a>
+                </div>
+                <div class="resume-viewer-wrap">
+                    <iframe
+                        class="resume-iframe"
+                        src="media/resume.pdf"
+                        title="Gustavo Valenzuela — Resume"
+                        loading="lazy"
+                    >
+                        <p class="resume-fallback">
+                            Your browser cannot display PDFs inline.
+                            <a href="media/resume.pdf" download>Download the PDF</a> instead.
+                        </p>
+                    </iframe>
+                </div>
             </div>
         </section>
     </main>
 
+    <script src="schedule.js"></script>
     <script src="swap.js"></script>
 
     <hr class="footer-divider">

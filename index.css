@@ -21,6 +21,13 @@ img[src$="gus.jpg"] {
 	box-shadow: 0 0 0 6px var(--purple-100);
 }
 
+/* Smaller avatar used on the About page */
+.photo-sm {
+	width: 110px !important;
+	height: 110px !important;
+	margin: 0 auto 1.25rem;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -206,6 +213,46 @@ body {
 	justify-content: center;
 	text-align: center;
 	gap: 1rem;
+}
+
+#about .panel-inner h2{
+	text-align: center;
+	color: var(--purple-900);
+}
+
+#about .panel-inner h3 {
+	color: var(--purple-700);
+	margin-top: 1.5rem;
+}
+
+#about .panel-inner p {
+	color: #333;
+	line-height: 1.6;
+}
+
+#about .panel-inner {
+    text-align: left;
+}
+
+
+/* Footer divider */
+.footer-divider {
+	width: 100%;
+	border: none;
+	border-top: 1.5px solid var(--purple-300);
+	margin: 2rem 0 0;
+	opacity: 0.6;
+}
+
+/* Footer */
+.site-footer {
+	width: 100%;
+	text-align: center;
+	padding: 1rem 1rem 1.5rem;
+	font-size: 0.8rem;
+	font-weight: 300;
+	color: var(--purple-700);
+	letter-spacing: 0.01em;
 }
 
 @media (max-width: 480px) {

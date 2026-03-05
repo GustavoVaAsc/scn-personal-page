@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo's page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="#home" data-target="home" class="active">Home</a></li>
+                <li><a href="#about" data-target="about">About me</a></li>
+                <li><a href="#schedule" data-target="schedule">Schedule</a></li>
+                <li><a href="#resume" data-target="resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section id="home" class="panel active" aria-label="Home section">
+            <img src="media/gus.jpg" alt="Gustavo's photo">
+
+            <div class="overview">
+                <h1>Gustavo Valenzuela Ascencio</h1>
+                <p>Software Engineer - Competitive Programmer - Newbie Quantum Computer Scientist</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/gustavovaasc" class="social-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/gussstt0/" class="social-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://instagram.com/gusss_tt0" class="social-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </div>
+
+            <div class="quick-nav">
+                <button class="qbtn" data-target="about"><i class="fa-solid fa-user"></i> About me</button>
+                <button class="qbtn" data-target="schedule"><i class="fa-solid fa-calendar-days"></i> Schedule</button>
+                <button class="qbtn qbtn--outline" data-target="resume"><i class="fa-solid fa-file-lines"></i> Resume / CV</button>
+            </div>
+        </section>
+
+        <section id="about" class="panel" aria-label="About me section">
+            <div class="panel-inner">
+                <h2>About me</h2>
+                <p>Brief bio or details go here. Replace this text with your content.</p>
+            </div>
+        </section>
+
+        <section id="schedule" class="panel" aria-label="Schedule section">
+            <div class="panel-inner">
+                <h2>Schedule</h2>
+                <p>Weekly schedule or calendar details can be placed here.</p>
+            </div>
+        </section>
+
+        <section id="resume" class="panel" aria-label="Resume section">
+            <div class="panel-inner">
+                <h2>Resume</h2>
+                <p>Links or summary of your resume/CV.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="swap.js"></script>
+</body>
+</html>
